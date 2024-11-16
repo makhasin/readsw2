@@ -7,23 +7,23 @@
 */
 
 global.settings = {
-    autoread: false,
-    anticall: false,
+    autoread: true,
+    anticall: true,
     autoreact: true
 }
 
 global.emoji = [
-    "🥀", 
-    "✨",
+    "🗿", 
+    "💩",
     "👌", 
     "💥",
     "🔥", 
-    "❤️",
-    "🥰",
+    "🦍",
+    "🖕",
     "👀",
     "💦",
     "🥳",
-    "😍",
+    "🎶",
     "💌",
-    "🌟"
+    "🔥"
 ]
