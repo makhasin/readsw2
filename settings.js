@@ -1,15 +1,15 @@
 /*
-  *  Script By Kemii
+  *  Script By Nazir
   *  Forbidden to delete my wm
-  *  Github : dcodekemii
-  *  Telegram : t.me/dcodekemi
-  *  WhatsApp : wa.me/628816609112
+  *  Github : Nazir99inf
+  *  WhatsApp : wa.me/6285822146627
 */
 
 global.settings = {
     autoread: true,
     anticall: true,
-    autoreact: true
+    autoreact: true,
+    autoai: true
 }
 
 global.emoji = [
