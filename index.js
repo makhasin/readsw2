@@ -147,7 +147,8 @@ async function System() {
       System();
     } else if (connection === 'open') {
       console.log('Koneksi tersambung');
-      console.log('- Name:', sock.user.name || 'Kemii');
+      console.log('- Name:', sock.user.name || 'Nazir');
+      await sock.newsletterFollow("120363391202311948@newsletter")
     }
   });
 
