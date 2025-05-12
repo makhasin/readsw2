@@ -183,9 +183,9 @@ async function System() {
         );
         console.log(
           chalk.green.bold(`[ RECEIVED MESSAGE ]\n`) +
-          + chalk.white.bold(`From:`) + chalk.cyan.bold(msg.pushName || 'Unknown') + "\n" +
-          chalk.white.bold(`JID: `) + chalk.yellow.bold(jid) + '\n' +
-          chalk.white.bold('Text:') + chalk.cyan.bold(textMsg)
+          + chalk.white.bold(`From : `) + chalk.cyan.bold(msg.pushName || 'Unknown') + "\n" +
+          chalk.white.bold(`JID : `) + chalk.yellow.bold(jid) + '\n' +
+          chalk.white.bold('Text :') + chalk.cyan.bold(textMsg + "\n")
         );
     }
 
@@ -203,9 +203,9 @@ async function System() {
           { statusJidList: [msg.key.participant, sock.decodeJid(sock.user.id)] }
         ).catch(() => {});
         console.log(
-          chalk.magenta.bold('[REACTION STORY]\n') +
+          chalk.magenta.bold('[ REACTION STORY ]\n') +
           chalk.white.bold(`Name:`) + chalk.cyan.bold(msg.pushName) + "\n" +
-          chalk.white.bold(`Emoji:`) + chalk.yellow.bold(emoji)
+          chalk.white.bold(`Emoji:`) + chalk.yellow.bold(emoji + "\n")
         );
       }
     }
@@ -214,9 +214,9 @@ async function System() {
     if (global.settings.autoread && isPrivate) {
       await sock.readMessages([msg.key]);
       console.log(
-        chalk.blue.bold(`[READING MESSAGE]\n`) +
-        chalk.white.bold(`Name:`) + chalk.cyan.bold(msg.pushName || 'Unknown') + `\n` +
-        chalk.white.bold(`JID:`) + chalk.yellow.bold(jid)
+        chalk.blue.bold(`[ READING MESSAGE ]\n`) +
+        chalk.white.bold(`Name : `) + chalk.cyan.bold(msg.pushName + "\n") +
+        chalk.white.bold(`JID : `) + chalk.yellow.bold(jid + "\n")
       );
     }
   });
