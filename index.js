@@ -126,11 +126,11 @@ async function System() {
 
   // Pairing jika belum registered
   if (!sock.authState.creds.registered) {
-    console.log(chalk.yellow.bold("( ! )") + chalk.white.bold(" Input Your Number For Example(62xxx)")
-    const phone = await question('>');
+    console.log(chalk.yellow.bold("\n( ! )") + chalk.white.bold(" Input Your Number For Example(62xxx)")
+    const phone = await question(chalk.red.bold('> '));
     let code = await sock.requestPairingCode(phone, 'NAZIR999');
     code = code.match(/.{1,4}/g)?.join('-') || code;
-    console.log(chalk.cyan.bold('Pairing code:') + chalk.yellow.bold(code));
+    console.log(chalk.cyan.bold('Pairing code: ') + chalk.yellow.bold(code));
   }
 
   // Connection lifecycle
