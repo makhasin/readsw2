@@ -9,7 +9,7 @@ global.settings = {
     autoread: true,
     anticall: true,
     autoreact: true,
-    autoai: true
+    autoai: false
 }
 
 global.emoji = [
